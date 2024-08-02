@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-R/X+9J WiSEbQX5QDG+4q3p/+W6f8D5jR/ejEaUcUwF4KH8ESW/CZzjgi4/MfqD2JGv9/F6U8D5JQgZLzG8s/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<div class="container">
+<h1>My First Bootstrap Page</h1>
+<p>This is the interaction of pages on <mark>different</mark> pages .</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<br>
+
+<h2>The Grid</h2>
+<p>The bootstrap grid system has classes</p>
+<ul>
+  <li>xs (extra small, for screens less than 768px)</li>
+  <li>sm (small, for screens 768px and up)</li>
+  <li>md (medium, for screens 992px and up)</li>
+  <li>lg (large, for screens 1200px and up)</li>
+  <li>xl (extra large, for screens 1400px and up)</li>
+</ul><br>
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adjusts according to screen.</h5>
+        <p class="card-text">Phones,laptops,tablets,desktop,projectors</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+<div class="row">
+   <div class="col-sm-6 order-sm-2">Col One</div>
+    <div class="col-sm-6 order-sm-1">Col Two</div>
+</div>
+<div class="row">
+   <div class="col-sm-4 offset-2">Col One</div> 
+   <div class="col-sm-4 offset-1">Col Two</div>
+</div>
+<div class="row my-custom-row justify-content-center align-items-center gx-5">
+   <div class="col-sm-4">
+    <div class="p-3 border bg-light">Col One</div>
+  </div> 
+  <div class="col-sm-4">
+    <div class="p-3 border bg-light">Col Two</div>
+  </div>
+</div>
+<br><br>
+
+<h2>Blockquotes</h2>
+<p>The blockquote element is used to present content from another source:</p>
+<blockquote class="blockquote">
+<p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+<footer class="blockquote-footer"><mark>From WWF's website</mark></footer>
+</blockquote>
+<br><br>
+
+<h2>Contextual Colors</h2>
+<p>Use the contextual classes to provide "meaning through colors":</p>
+<p class="text-muted">This text is muted.</p>
+<p class="text-primary">This text is important.</p>
+<p class="text-success">This text indicates success.</p>
+<p class="text-info">This text represents some information.</p>
+<p class="text-warning">This text represents a warning.</p>
+<p class="text-danger">This text represents danger.</p>
+<br><br>
+
+<h2>Contextual Backgrounds</h2>
+<p>Use the contextual background classes to provide "meaning through colors":</p>
+<p class="bg-primary text-white">This text is important.</p>
+<p class="bg-success text-white">This text indicates success.</p>
+<p class="bg-info text-white">This text represents some information.</p>
+<p class="bg-warning text-dark">This text represents a warning.</p>
+<p class="bg-danger text-white">This text represents danger.</p>
+<br><br>
+
+<h2>Tables</h2>
+<p>Use the table element to present tabular data:</p>
+<table class="table table-striped">Adds zebra stripes table</table>
+<table class="table table-bordered">Adds borders to all sides of the table and cells.</table>
+<table class="table table-hover">Adds a grey background (hover) on table rows. </table>
+<br><br>
+
+<h2>Images</h2>
+<p>Use the img element to embed images:</p>
+<img src="https://i.pinimg.com/736x/4a/79/f2/4a79f2017ec7a9e39f39d0065b9f4556.jpg" alt="Avatar" class="img-fluid rounded" width="304" height="134">
+<img src="https://i.pinimg.com/736x/4a/79/f2/4a79f2017ec7a9e39f39d0065b9f4556.jpg" alt="Avatar" class="img-fluid rounded-circle" width="304" height="134">
+<img src="https://i.pinimg.com/736x/4a/79/f2/4a79f2017ec7a9e39f39d0065b9f4556.jpg" alt="Avatar" class="img-fluid thumbnail" width="304" height="134">
+<br>
+<img src="https://i.pinimg.com/736x/4a/79/f2/4a79f2017ec7a9e39f39d0065b9f4556.jpg" alt="Avatar" class="img-fluid">
+</div>
+<br><br>
+
+<div class="card p-5 rounded">
+    <div class="card-body">
+      <h4>Basic well was replaced with card-body in bootstrap 5 >>> Why do we use it?</h4>
+      <p>It is a great starting point for creating responsive, mobile-first projects.</p>
+    </div>
+  </div>
+  <br><br>
+
+ <h2>Alerts</h2> 
+<div class="alert alert-success">
+<strong>Success!</strong> Indicates a successful or positive action.
+</div>
+<div class="alert alert-info">
+<strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+<div class="alert alert-danger">
+<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+<br><br>
+
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    <span class="sr-only">Close</span>
+  </button>
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+</div>
+<br><br>
+
+<h2>Buttons</h2>
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary btn-md">Medium</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+<button type="button" class="btn btn-primary btn-block">Button 1</button>
+<br><br>
+
+<span class="fa fa-icon-name">Font Awesome Syntax</span>
+<p>A popular and widely-used icon library that provides a vast collection of icons.</p>
+<br><br>
+
+<h2>Progress Bars</h2>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+</div>
+<br><br>
+
+<h2>Badges</h2>
+<p>Badges are numerical indicators of how many items are associated with a link</p>
+<a href="#">News <span class="badge badge-primary"> 5 </span> </a> <br>
+<a href="#">Comments <span class="badge badge-button">10</span> </a> <br>
+<a href="#">Updates <span class="badge badge-pill">2</span> </a>
+<br><br>
+
+<h2>Pagination</h2>
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<br><br>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>
